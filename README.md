@@ -2,7 +2,7 @@
 
 Can your device run doom? Only one way to find out!
 
-To run this project locally, you'll need to create `.env.local` using `.env.example` as a template
+To run this project locally, you'll need to create a `.env.local` file using `.env.example` as a template
 
 Then, install the dependencies
 
