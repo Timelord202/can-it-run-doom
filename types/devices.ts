@@ -1,4 +1,4 @@
-export type DeviceSchema = {
+export type Device = {
     name: string,
     storage: number,
     ram: number,
