@@ -1,7 +1,7 @@
 import Form from 'next/form';
 import Link from 'next/link';
 import insertDevice from '@/actions/insertDevice';
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight } from 'react-icons/fa';
 import SubmitButton from './SubmitButton';
 
 export default function SubmitDevice() {

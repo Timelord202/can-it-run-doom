@@ -14,7 +14,7 @@ export default async function insertDevice(formData: FormData) {
     const { error } = await supabase.from('devices').insert(device);
 
     if (error) {
-        throw new Error("Failed to insert device!");
+        throw new Error('Failed to insert device!');
     }
 
     redirect('/devices');
