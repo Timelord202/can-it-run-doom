@@ -2,6 +2,9 @@ import { supabase } from '@/lib/supabase';
 import ShowDevices from '@/components/ShowDevices';
 import { Device } from '@/types/devices';
 
+// Revalidate every minute
+export const revalidate = 60;
+
 async function getDevices() {
   const { data, error } = await supabase.from('devices').select('*');
 

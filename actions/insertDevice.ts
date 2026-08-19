@@ -1,6 +1,7 @@
 'use server';
 import { supabase } from '@/lib/supabase';
-import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation';
+import { revalidatePath } from 'next/cache';
 
 export default async function insertDevice(formData: FormData) {
     // TODO: Add validation with Zod
@@ -17,5 +18,6 @@ export default async function insertDevice(formData: FormData) {
         throw new Error('Failed to insert device!');
     }
 
+    revalidatePath('/devices');
     redirect('/devices');
 }
