@@ -31,7 +31,7 @@ export default function SubmitDevice() {
               name="name"
               type="text"
               required
-              placeholder="My ancient laptop"
+              placeholder="Ex. Dyson Vacuum"
               className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 outline-none focus:border-zinc-600"
             />
           </div>
